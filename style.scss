@@ -1,0 +1,201 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("police/Roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("police/Roboto/Roboto-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Roboto-Thin";
+  src: url("police/Roboto/Roboto-Thin.ttf");
+}
+
+@font-face {
+  font-family: "Shrikhand";
+  src: url("police/Shrikhand/Shrikhand-Regular.ttf");
+}
+
+$primary-color: #9356dc;
+$secondary-color: #ff79da;
+$background-color: #f2f2f2;
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  font-family: "Roboto";
+  font-size: 2em;
+}
+
+// logo
+
+.logo-omf {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(214, 214, 214);
+  i {
+    align-self: center;
+    margin-right: 10px;
+    color: rgb(75, 75, 75);
+  }
+  p {
+    font-size: 1.2em;
+    font-family: "Roboto-Bold";
+  }
+}
+
+// Explorer
+
+.explore {
+  font-family: "Roboto";
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-color: $background-color;
+  padding-bottom: 40px;
+  h2 {
+    font-family: "Roboto-Thin";
+    font-size: 1.3em;
+    margin-top: 0;
+  }
+  button {
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.5em;
+    padding: 20px;
+    background: linear-gradient(to bottom, $secondary-color, $primary-color);
+    border: none;
+    color: white;
+    border-radius: 50px;
+  }
+}
+
+// Fonctionnement
+
+.fonctionnement {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  .steps-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 40px;
+    height: 300px;
+  }
+  .step {
+    display: flex;
+    background-color: $background-color;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 20px;
+    box-shadow: -1px 2px 27px 0px rgba(189, 189, 189, 0.65);
+    width: 100%;
+    justify-content: space-between;
+    h2 {
+      font-family: "Roboto";
+      font-size: 1.2em;
+      align-self: center;
+      text-align: start;
+      width: 70%;
+    }
+    i {
+      align-self: center;
+      color: rgb(75, 75, 75);
+    }
+    p {
+      position: relative;
+      background-color: $primary-color;
+      padding: 7px;
+      padding-left: 12px;
+      padding-right: 12px;
+      border-radius: 30px;
+      color: white;
+      font-family: "Roboto";
+      right: 15px;
+    }
+  }
+  div:nth-child(3) {
+    background-color: #9256dc25;
+    i {
+      color: $primary-color;
+    }
+  }
+}
+
+// Restaurants
+
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  background-color: $background-color;
+  padding: 10px;
+  .card-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.card {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  box-shadow: -1px 2px 27px 0px rgba(189, 189, 189, 0.65);
+  border-radius: 20px;
+  img {
+    object-fit: cover;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+}
+
+.description {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  padding-left: 20px;
+  h1 {
+    font-size: 1.5em;
+    margin-bottom: 0;
+    margin-top: 5px;
+    font-family: 'Roboto-Bold';
+  }
+  p {
+    font-size: 1.2em;
+    font-family: 'Roboto';
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  button {
+    width: max-content;
+    border: none;
+    position: relative;
+    left: 90px;
+    top: 10px;
+    &:active, &:focus {
+      outline: none;
+    }
+  }
+}
