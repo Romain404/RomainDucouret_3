@@ -108,7 +108,7 @@ h1 {
     padding-top: 5px;
     padding-bottom: 5px;
     border-radius: 20px;
-    box-shadow: -1px 2px 27px 0px rgba(189, 189, 189, 0.65);
+    box-shadow: -1px 2px 27px 0px rgba(92, 92, 92, 0.65);
     width: 100%;
     justify-content: space-between;
     h2 {
@@ -152,7 +152,6 @@ h1 {
   .card-list {
     display: flex;
     flex-direction: column;
-    justify-content: center;
   }
 }
 
@@ -163,12 +162,15 @@ h1 {
   flex-direction: column;
   box-shadow: -1px 2px 27px 0px rgba(189, 189, 189, 0.65);
   border-radius: 20px;
-  img {
-    object-fit: cover;
-    width: 100%;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-  }
+  margin-bottom: 20px;
+}
+
+.restaurant-img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 200px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .description {
@@ -180,13 +182,15 @@ h1 {
     font-size: 1.5em;
     margin-bottom: 0;
     margin-top: 5px;
-    font-family: 'Roboto-Bold';
+    font-family: "Roboto-Bold";
+    min-width: 200px;
   }
   p {
     font-size: 1.2em;
-    font-family: 'Roboto';
+    font-family: "Roboto";
     margin-top: 5px;
     margin-bottom: 5px;
+    width: 100%;
   }
   button {
     width: max-content;
@@ -194,8 +198,38 @@ h1 {
     position: relative;
     left: 90px;
     top: 10px;
-    &:active, &:focus {
+    &:active,
+    &:focus {
       outline: none;
     }
+  }
+}
+
+// Footer
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(49, 49, 49);
+  padding: 10px;
+  padding-left: 20px;
+  a {
+    font-family: 'Roboto';
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+    i {
+      margin-right: 10px;
+      width: 20px;
+    }
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  h1 {
+    font-family: 'Shrikhand';
+    color: white;
+    font-size: 1.2em;
+    font-weight: lighter;
   }
 }
