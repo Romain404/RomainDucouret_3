@@ -214,6 +214,38 @@ h1 {
   }
 }
 
+// animation chargement
+
+.loading {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 20px solid transparent;
+  margin: auto;
+  animation: chargement 3000ms;
+  position: absolute;
+  top: 40%;
+  right: 30%;
+}
+
+@keyframes chargement {
+  0% {
+    transform: rotate(0deg) scale(1);
+    border-top-color: $primary-color;
+    border-color: #f2f2f2;
+  }
+
+  50% {
+    transform: rotate(780deg) scale(1.25);
+    border-top-color: blue;
+  }
+
+  100% {
+    border-top: 20px transparent;
+    border: 20px transparent;
+  }
+}
+
 // Footer
 
 footer {
@@ -223,7 +255,7 @@ footer {
   padding: 10px;
   padding-left: 20px;
   a {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     color: white;
     text-decoration: none;
     margin-bottom: 10px;
@@ -236,7 +268,7 @@ footer {
     }
   }
   h1 {
-    font-family: 'Shrikhand';
+    font-family: "Shrikhand";
     color: white;
     font-size: 1.2em;
     font-weight: lighter;
