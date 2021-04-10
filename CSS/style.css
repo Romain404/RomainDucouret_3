@@ -153,6 +153,10 @@ h1 {
   border-radius: 20px;
   margin-bottom: 20px;
 }
+.card a {
+  text-decoration: none;
+  color: #000;
+}
 
 .restaurant-img {
   object-fit: cover;
