@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "sass": "sass --watch ./CSS/style.scss:./CSS/style.css",
-    "sass-palette": "sass --watch ./CSS/style_la_palette_du_gout.scss:./CSS/style_la_palette_du_gout.css"
+    "sass-menus": "sass --watch ./CSS/style_menus.scss:./CSS/style_menus.css"
   },
   "author": "",
   "license": "ISC"

@@ -20,7 +20,7 @@
 
 $primary-color: #9356dc;
 $secondary-color: #ff79da;
-$tertiary-color: #99E2D0;
+$tertiary-color: #99e2d0;
 $background-color: #f2f2f2;
 
 header {
@@ -44,6 +44,7 @@ body {
   padding: 0;
   width: 100%;
   height: 100%;
+  background-color: $background-color;
 }
 
 h1 {
@@ -53,10 +54,11 @@ h1 {
 
 .restaurant-img {
   position: relative;
-img {
-  width: 100%;
-  object-fit: cover;
-}
+  img {
+    width: 100%;
+    object-fit: cover;
+    max-height: 300px;
+  }
 }
 
 .menu {
@@ -67,13 +69,13 @@ img {
   width: 100%;
   border-radius: 30px;
   h1 {
-    font-family: 'Shrikhand';
+    font-family: "Shrikhand";
     font-weight: lighter;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
   }
   h2 {
-    font-family: 'Roboto-Thin';  
+    font-family: "Roboto-Thin";
     margin-left: 20px;
     border-bottom: 4px solid $tertiary-color;
     width: max-content;
@@ -94,7 +96,9 @@ img {
   }
 }
 
-.entre, .plat, .desserts {
+.entre,
+.plat,
+.desserts {
   display: flex;
   flex-direction: column;
   ul {
@@ -109,8 +113,10 @@ img {
       box-shadow: -1px 2px 27px 0px rgba(221, 221, 221, 0.753);
       padding-bottom: 0;
       margin-bottom: 15px;
-      h1, p, h3 {
-        font-family: 'Roboto';
+      h1,
+      p,
+      h3 {
+        font-family: "Roboto";
         margin-bottom: 0;
         margin-top: 0;
       }
@@ -128,14 +134,51 @@ img {
     }
   }
 }
-.order {
-  width: max-content;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 1.5em;
-  padding: 20px;
-  background: linear-gradient(to bottom, $secondary-color, $primary-color);
-  border: none;
-  color: white;
-  border-radius: 50px;
+
+.order_button {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  margin-top: 20px;
+  .order {
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.5em;
+    padding: 20px;
+    background: linear-gradient(to bottom, $secondary-color, $primary-color);
+    border: none;
+    color: white;
+    border-radius: 50px;
+  }
+}
+
+// Footer
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(49, 49, 49);
+  padding: 10px;
+  padding-left: 20px;
+  width: 100%;
+  a {
+    font-family: "Roboto";
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+    i {
+      margin-right: 10px;
+      width: 20px;
+    }
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  h1 {
+    font-family: "Shrikhand";
+    color: white;
+    font-size: 1.2em;
+    font-weight: lighter;
+  }
 }
