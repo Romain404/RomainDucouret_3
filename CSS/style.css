@@ -141,6 +141,7 @@ h1 {
 }
 .restaurants .card-list {
   display: flex;
+  flex-wrap: nowrap;
   flex-direction: column;
 }
 
@@ -152,6 +153,7 @@ h1 {
   box-shadow: -1px 2px 27px 0px rgba(189, 189, 189, 0.65);
   border-radius: 20px;
   margin-bottom: 20px;
+  width: 100%;
 }
 .card a {
   text-decoration: none;
@@ -177,7 +179,7 @@ h1 {
   margin-bottom: 0;
   margin-top: 5px;
   font-family: "Roboto-Bold";
-  min-width: 210px;
+  width: 85%;
 }
 .description p {
   font-size: 1.2em;
@@ -189,9 +191,6 @@ h1 {
 .description button {
   width: max-content;
   border: none;
-  position: relative;
-  left: 90px;
-  top: 10px;
 }
 .description button:active, .description button:focus {
   outline: none;
@@ -249,6 +248,62 @@ footer h1 {
   color: white;
   font-size: 1.2em;
   font-weight: lighter;
+}
+
+@media screen and (min-width: 768px) {
+  .fonctionnement .steps-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: max-content;
+    justify-content: space-around;
+    padding-bottom: 0;
+  }
+  .fonctionnement .steps-list .step {
+    width: 45%;
+    max-height: 60px;
+    margin-bottom: 30px;
+  }
+
+  .fonctionnement div:nth-child(3) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .card {
+    width: 49%;
+    margin: 0;
+    margin-bottom: 15px;
+  }
+
+  .restaurants .cards-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cards-list {
+    align-self: center;
+    justify-content: space-around;
+  }
+  .cards-list .card {
+    margin-bottom: 30px;
+  }
+  .cards-list .card .restaurant-img {
+    max-height: 300px;
+  }
+
+  .restaurants h1 {
+    align-self: center;
+  }
+
+  .description button {
+    left: 460px;
+  }
+  .description h1 {
+    width: 90%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
