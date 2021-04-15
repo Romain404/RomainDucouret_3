@@ -1,0 +1,183 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../Base/police/Roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("../Base/police/Roboto/Roboto-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Roboto-Thin";
+  src: url("../Base/police/Roboto/Roboto-Thin.ttf");
+}
+
+@font-face {
+  font-family: "Shrikhand";
+  src: url("../Base/police/Shrikhand/Shrikhand-Regular.ttf");
+}
+
+@import "../Utils/variables";
+
+header {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  height: 70px;
+  background: center no-repeat url("../Composants/images/ohmyfood@2x.svg");
+}
+
+.return_button {
+  color: #5f5f5f;
+  align-self: center;
+  margin-left: 10px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $background-color;
+}
+
+h1 {
+  font-family: "Roboto";
+  font-size: 2em;
+}
+
+.restaurant-img {
+  position: relative;
+  img {
+    width: 100%;
+    object-fit: cover;
+    max-height: 300px;
+  }
+}
+
+.menu {
+  background-color: $background-color;
+  z-index: 2;
+  position: relative;
+  top: -30px;
+  width: 100%;
+  border-radius: 30px;
+  h1 {
+    font-family: "Shrikhand";
+    font-weight: lighter;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  h2 {
+    font-family: "Roboto-Thin";
+    margin-left: 20px;
+    border-bottom: 4px solid $tertiary-color;
+    width: max-content;
+    font-size: 1.2em;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+  }
+  .titre {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+    padding-left: 20px;
+    button {
+      border: none;
+      background: rgba(255, 255, 255, 0);
+      background-color: rgba(255, 255, 255, 0);
+    }
+  }
+}
+
+.entre,
+.plat,
+.desserts {
+  display: flex;
+  flex-direction: column;
+  ul {
+    padding-inline-start: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    li {
+      list-style-type: none;
+      background-color: white;
+      padding: 10px;
+      border-radius: 20px;
+      box-shadow: -1px 2px 27px 0px rgba(221, 221, 221, 0.753);
+      padding-bottom: 0;
+      margin-bottom: 15px;
+      h1,
+      p,
+      h3 {
+        font-family: "Roboto";
+        margin-bottom: 0;
+        margin-top: 0;
+      }
+      h1 {
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-bottom: 7px;
+      }
+      h3 {
+        position: relative;
+        left: 90%;
+        bottom: 25px;
+        font-size: 1em;
+      }
+    }
+  }
+}
+
+.order_button {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  margin-top: 20px;
+  .order {
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.5em;
+    padding: 20px;
+    background: linear-gradient(to bottom, $secondary-color, $primary-color);
+    border: none;
+    color: white;
+    border-radius: 50px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+// Footer
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(49, 49, 49);
+  padding: 10px;
+  padding-left: 20px;
+  width: 100%;
+  a {
+    font-family: "Roboto";
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+    i {
+      margin-right: 10px;
+      width: 20px;
+    }
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  h1 {
+    font-family: "Shrikhand";
+    color: white;
+    font-size: 1.2em;
+    font-weight: lighter;
+  }
+}

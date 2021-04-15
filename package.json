@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./CSS/style.scss:./CSS/style.css",
-    "sass-menus": "sass --watch ./CSS/style_menus.scss:./CSS/style_menus.css"
+    "sass": "sass --watch ./Layout/style.scss:./Layout/style.css",
+    "sass-menus": "sass --watch ./Layout/style_menus.scss:./Layout/style_menus.css"
   },
   "author": "",
   "license": "ISC"
