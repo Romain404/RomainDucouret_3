@@ -1,232 +1,32 @@
 @font-face {
   font-family: "Roboto";
-  src: url("../Base/police/Roboto/Roboto-Regular.ttf");
+  src: url("/sass/base/police/Roboto/Roboto-Regular.ttf");
 }
 
 @font-face {
   font-family: "Roboto-Bold";
-  src: url("../Base/police/Roboto/Roboto-Bold.ttf");
+  src: url("/sass/base/police/Roboto/Roboto-Bold.ttf");
 }
 
 @font-face {
   font-family: "Roboto-Thin";
-  src: url("../Base/police/Roboto/Roboto-Thin.ttf");
+  src: url("/sass/base/police/Roboto/Roboto-Thin.ttf");
 }
 
 @font-face {
   font-family: "Shrikhand";
-  src: url("../Base/police/Shrikhand/Shrikhand-Regular.ttf");
+  src: url("/sass/base/police/Shrikhand/Shrikhand-Regular.ttf");
 }
 
 @import "../sass/utils/variables";
+@import "../sass/base/base";
+@import "../sass/base/typo";
+@import "../sass/components/logo";
+@import "../sass/layout/explore";
+@import "../sass/layout/work";
+@import "../sass/layout/restaurants";
+@import "../sass/layout/footer";
 
-// téléphones
-
-.titre {
-  background-color: white;
-  width: 100%;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-}
-
-h1 {
-  font-family: "Roboto";
-  font-size: 2em;
-}
-
-// logo
-
-.logo-omf {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.location {
-  display: flex;
-  justify-content: center;
-  background-color: rgb(214, 214, 214);
-  i {
-    align-self: center;
-    margin-right: 10px;
-    color: rgb(109, 109, 109);
-  }
-  p {
-    font-size: 1.2em;
-    font-family: "Roboto-Bold";
-  }
-}
-
-// Explorer
-
-.explore {
-  font-family: "Roboto";
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  background-color: $background-color;
-  padding-bottom: 40px;
-  h2 {
-    font-family: "Roboto-Thin";
-    font-size: 1.3em;
-    margin-top: 0;
-  }
-  button {
-    width: max-content;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 1.5em;
-    padding: 20px;
-    background: linear-gradient(to bottom, $secondary-color, $primary-color);
-    border: none;
-    color: white;
-    border-radius: 50px;
-  }
-}
-
-// Fonctionnement
-
-.fonctionnement {
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  .steps-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 40px;
-    height: 300px;
-  }
-  .step {
-    display: flex;
-    background-color: $background-color;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-radius: 20px;
-    box-shadow: -1px 2px 27px 0px rgba(92, 92, 92, 0.65);
-    width: 100%;
-    justify-content: space-between;
-    h2 {
-      font-family: "Roboto";
-      font-size: 1.2em;
-      align-self: center;
-      text-align: start;
-      width: 70%;
-    }
-    i {
-      align-self: center;
-      color: rgb(75, 75, 75);
-    }
-    p {
-      position: relative;
-      background-color: $primary-color;
-      padding: 7px;
-      padding-left: 12px;
-      padding-right: 12px;
-      border-radius: 30px;
-      color: white;
-      font-family: "Roboto";
-      right: 15px;
-    }
-  }
-  div:nth-child(3) {
-    background-color: #9256dc25;
-    i {
-      color: $primary-color;
-    }
-  }
-}
-
-// Restaurants
-
-.restaurants {
-  display: flex;
-  flex-direction: column;
-  background-color: $background-color;
-  padding: 10px;
-  .card-list {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-  }
-}
-
-.card {
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  flex-direction: column;
-  box-shadow: -1px 2px 27px 0px rgba(189, 189, 189, 0.65);
-  border-radius: 20px;
-  margin-bottom: 20px;
-  width: 100%;
-  a {
-    text-decoration: none;
-    color: #000;
-    h2 {
-      font-size: 1em;
-      font-family: 'Roboto';
-      background-color: $tertiary-color;
-      width: max-content;
-      padding-right: 10px;
-      padding-left: 10px;
-      padding-top: 5px;
-      padding-bottom: 5px;
-      border-radius: 5px;
-      color: #22b900;
-      position: relative;
-      bottom: 200px;
-      left: 300px;
-    }
-  }
-}
-
-.restaurant-img {
-  object-fit: cover;
-  width: 100%;
-  max-height: 200px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-}
-
-.description {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 10px;
-  padding-left: 20px;
-  h1 {
-    font-size: 1.5em;
-    margin-bottom: 0;
-    margin-top: 5px;
-    font-family: "Roboto-Bold";
-    width: 85%;
-  }
-  p {
-    font-size: 1.2em;
-    font-family: "Roboto";
-    margin-top: 5px;
-    margin-bottom: 5px;
-    width: 100%;
-  }
-  button {
-    width: max-content;
-    border: none;
-    &:active,
-    &:focus {
-      outline: none;
-    }
-  }
-}
 
 // animation chargement
 
@@ -257,35 +57,6 @@ h1 {
   100% {
     border-top: 20px transparent;
     border: 20px transparent;
-  }
-}
-
-// Footer
-
-footer {
-  display: flex;
-  flex-direction: column;
-  background-color: rgb(49, 49, 49);
-  padding: 10px;
-  padding-left: 20px;
-  a {
-    font-family: "Roboto";
-    color: white;
-    text-decoration: none;
-    margin-bottom: 10px;
-    i {
-      margin-right: 10px;
-      width: 20px;
-    }
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-  h1 {
-    font-family: "Shrikhand";
-    color: white;
-    font-size: 1.2em;
-    font-weight: lighter;
   }
 }
 

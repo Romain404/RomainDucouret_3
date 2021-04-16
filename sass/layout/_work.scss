@@ -1,0 +1,54 @@
+.fonctionnement {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    .steps-list {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-bottom: 40px;
+      height: 300px;
+    }
+    .step {
+      display: flex;
+      background-color: $background-color;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      border-radius: 20px;
+      box-shadow: -1px 2px 27px 0px rgba(92, 92, 92, 0.65);
+      width: 100%;
+      justify-content: space-between;
+      h2 {
+        font-family: "Roboto";
+        font-size: 1.2em;
+        align-self: center;
+        text-align: start;
+        width: 70%;
+        margin-top: auto;
+        margin-bottom: auto;
+      }
+      i {
+        align-self: center;
+        color: rgb(75, 75, 75);
+      }
+      p {
+        position: relative;
+        background-color: $primary-color;
+        padding: 7px;
+        padding-left: 12px;
+        padding-right: 12px;
+        border-radius: 30px;
+        color: white;
+        font-family: "Roboto";
+        right: 15px;
+      }
+    }
+    div:nth-child(3) {
+      background-color: #9256dc25;
+      i {
+        color: $primary-color;
+      }
+    }
+  }

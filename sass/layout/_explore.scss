@@ -1,0 +1,19 @@
+.explore {
+    font-family: "Roboto";
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: $background-color;
+    padding-bottom: 40px;
+    button {
+      width: max-content;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 1.5em;
+      padding: 20px;
+      background: linear-gradient(to bottom, $secondary-color, $primary-color);
+      border: none;
+      color: white;
+      border-radius: 50px;
+    }
+  }
