@@ -18,13 +18,14 @@
   src: url("../Base/police/Shrikhand/Shrikhand-Regular.ttf");
 }
 
-@import "../Utils/variables";
+@import "../sass/utils/variables";
 
 // téléphones
 
 .titre {
   background-color: white;
   width: 100%;
+
 }
 
 body {
