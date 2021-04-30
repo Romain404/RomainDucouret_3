@@ -1,18 +1,18 @@
 @font-face {
   font-family: "Roboto";
-  src: url("/sass/base/police/Roboto/Roboto-Regular.ttf");
+  src: url("../sass/base/police/Roboto/Roboto-Regular.ttf");
 }
 @font-face {
   font-family: "Roboto-Bold";
-  src: url("/sass/base/police/Roboto/Roboto-Bold.ttf");
+  src: url("../sass/base/police/Roboto/Roboto-Bold.ttf");
 }
 @font-face {
   font-family: "Roboto-Thin";
-  src: url("/sass/base/police/Roboto/Roboto-Thin.ttf");
+  src: url("../sass/base/police/Roboto/Roboto-Thin.ttf");
 }
 @font-face {
   font-family: "Shrikhand";
-  src: url("/sass/base/police/Shrikhand/Shrikhand-Regular.ttf");
+  src: url("../sass/base/police/Shrikhand/Shrikhand-Regular.ttf");
 }
 header {
   background-color: white;
@@ -21,7 +21,7 @@ header {
   flex-direction: row-reverse;
   justify-content: flex-end;
   height: 70px;
-  background: center no-repeat url("/public/img/ohmyfood@2x.svg");
+  background: center no-repeat url("./public/img/ohmyfood@2x.svg");
 }
 
 .return_button {
