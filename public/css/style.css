@@ -304,7 +304,7 @@ footer h1 {
     text-align: center;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 992px) {
   .cards-list {
     align-self: center;
     justify-content: space-around;
@@ -316,8 +316,30 @@ footer h1 {
     max-height: 300px;
   }
 
+  .explore h1 {
+    font-size: 2.5em;
+  }
+  .explore h2 {
+    font-size: 2em;
+  }
+  .explore button {
+    font-size: 2em;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
   .restaurants h1 {
     align-self: center;
+    font-size: 2.5em;
+  }
+
+  .fonctionnement h1 {
+    align-self: center;
+    font-size: 2.5em;
+  }
+
+  .fonctionnement .step h2 {
+    font-size: 1.4em;
   }
 
   .description button {
@@ -325,6 +347,10 @@ footer h1 {
   }
   .description h1 {
     width: 90%;
+    font-size: 1.7em;
+  }
+  .description p {
+    font-size: 1.5em;
   }
 }
 

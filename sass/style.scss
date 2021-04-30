@@ -100,8 +100,8 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
-  // Desktop
+@media screen and (min-width: 992px) {
+  // Tablette XL
 
   .cards-list {
     align-self: center;
@@ -114,8 +114,31 @@
     }
   }
 
+  .explore {
+    h1 {
+      font-size: 2.5em;
+    }
+    h2 {
+      font-size: 2em;
+    }
+    button {
+      font-size: 2em;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+  }
   .restaurants h1 {
     align-self: center;
+    font-size: 2.5em;
+  }
+
+  .fonctionnement h1 {
+    align-self: center;
+    font-size: 2.5em;
+  }
+
+  .fonctionnement .step h2 {
+    font-size: 1.4em;
   }
 
   .description {
@@ -124,6 +147,18 @@
     }
     h1 {
       width: 90%;
+      font-size: 1.7em;
+    }
+    p {
+      font-size: 1.5em;
     }
   }
+}
+
+@media screen and (min-width: 1200px) {
+  // Desktop
+}
+
+@media screen and (min-width: 1400px) {
+  // Desktop XL
 }
