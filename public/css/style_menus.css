@@ -132,12 +132,12 @@ h1 {
   display: flex;
   justify-content: space-between;
 }
-.conteneur:hover .checked {
+.conteneur:active .checked {
   background-color: #99E2D0;
   animation: addtocard 1000ms;
   display: flex;
 }
-.conteneur:hover .checked i {
+.conteneur:active .checked i {
   animation: rotate 1000ms;
 }
 
