@@ -1,0 +1,25 @@
+@import "../utils/variables";
+
+.far {
+  color: #000;
+  &:hover {
+    
+    animation: fill 1s;
+    transition-property: transform;
+  }
+}
+
+@keyframes fill {
+  from {
+    opacity: 0.2;
+  }
+
+  to {
+    transform: scaleY(1), scaleX(1);
+    background: linear-gradient(to bottom, $secondary-color, $primary-color);
+    -webkit-background-clip: text;
+     color: transparent;
+     font-weight: bold;
+     opacity: 1;
+  }
+}

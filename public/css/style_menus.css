@@ -14,6 +14,27 @@
   font-family: "Shrikhand";
   src: url("/sass/base/police/Shrikhand/Shrikhand-Regular.ttf");
 }
+.far {
+  color: #000;
+}
+.far:hover {
+  animation: fill 1s;
+  transition-property: transform;
+}
+
+@keyframes fill {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    transform: scaleY(1), scaleX(1);
+    background: linear-gradient(to bottom, #ff79da, #9356dc);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    opacity: 1;
+  }
+}
 header {
   background-color: white;
   width: 100%;

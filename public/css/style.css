@@ -209,6 +209,7 @@ h1 {
 .description button {
   width: max-content;
   border: none;
+  background-color: #f2f2f2;
 }
 .description button:active, .description button:focus {
   outline: none;
@@ -241,6 +242,27 @@ footer h1 {
   font-weight: lighter;
 }
 
+.far {
+  color: #000;
+}
+.far:hover {
+  animation: fill 1s;
+  transition-property: transform;
+}
+
+@keyframes fill {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    transform: scaleY(1), scaleX(1);
+    background: linear-gradient(to bottom, #ff79da, #9356dc);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    opacity: 1;
+  }
+}
 .loading {
   width: 120px;
   height: 120px;
