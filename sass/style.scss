@@ -40,7 +40,7 @@
   animation: chargement 3000ms;
   position: absolute;
   top: 40%;
-  right: 30%;
+  right: 25%;
 }
 
 @keyframes chargement {
@@ -99,6 +99,11 @@
   footer {
     text-align: center;
   }
+
+  .loading {
+    top: 40%;
+    right: 40%;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -153,6 +158,10 @@
     p {
       font-size: 1.5em;
     }
+  }
+  .loading {
+    top: 50%;
+    right: 42%;
   }
 }
 

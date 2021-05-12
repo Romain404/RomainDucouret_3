@@ -37,6 +37,24 @@ h1 {
   width: 100%;
 }
 
+.fonctionnement h2, .restaurants h2 {
+  font-family: "Roboto-Bold";
+  font-size: 1.6em;
+  margin: 5px;
+  margin-bottom: 15px;
+  margin-top: 40px;
+}
+
+.step h3 {
+  font-family: "Roboto";
+  font-size: 1.2em;
+  align-self: center;
+  text-align: start;
+  width: 70%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .logo-omf {
   display: flex;
   margin-left: auto;
@@ -80,6 +98,9 @@ h1 {
   color: white;
   border-radius: 50px;
 }
+.explore button:hover {
+  opacity: 0.5;
+}
 
 .fonctionnement {
   padding: 10px;
@@ -104,15 +125,6 @@ h1 {
   box-shadow: -1px 2px 27px 0px rgba(92, 92, 92, 0.65);
   width: 100%;
   justify-content: space-between;
-}
-.fonctionnement .step h2 {
-  font-family: "Roboto";
-  font-size: 1.2em;
-  align-self: center;
-  text-align: start;
-  width: 70%;
-  margin-top: auto;
-  margin-bottom: auto;
 }
 .fonctionnement .step i {
   align-self: center;
@@ -162,7 +174,7 @@ h1 {
   text-decoration: none;
   color: #000;
 }
-.card a h2 {
+.card a h4 {
   font-size: 1em;
   font-family: "Roboto";
   background-color: #99E2D0;
@@ -192,7 +204,7 @@ h1 {
   padding: 10px;
   padding-left: 20px;
 }
-.description h1 {
+.description h3 {
   font-size: 1.5em;
   margin-bottom: 0;
   margin-top: 5px;
@@ -235,7 +247,7 @@ footer a i {
 footer a:hover {
   text-decoration: underline;
 }
-footer h1 {
+footer h2 {
   font-family: "Shrikhand";
   color: white;
   font-size: 1.2em;
@@ -248,13 +260,14 @@ footer h1 {
 .far:hover {
   animation: fill 1s;
   transition-property: transform;
+  animation-fill-mode: forwards;
 }
 
 @keyframes fill {
-  from {
+  0% {
     opacity: 0.2;
   }
-  to {
+  100% {
     transform: scaleY(1), scaleX(1);
     background: linear-gradient(to bottom, #ff79da, #9356dc);
     -webkit-background-clip: text;
@@ -272,7 +285,7 @@ footer h1 {
   animation: chargement 3000ms;
   position: absolute;
   top: 40%;
-  right: 30%;
+  right: 25%;
 }
 
 @keyframes chargement {
@@ -325,6 +338,11 @@ footer h1 {
   footer {
     text-align: center;
   }
+
+  .loading {
+    top: 40%;
+    right: 40%;
+  }
 }
 @media screen and (min-width: 992px) {
   .cards-list {
@@ -373,6 +391,11 @@ footer h1 {
   }
   .description p {
     font-size: 1.5em;
+  }
+
+  .loading {
+    top: 50%;
+    right: 42%;
   }
 }
 

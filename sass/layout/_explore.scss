@@ -15,5 +15,8 @@
       border: none;
       color: white;
       border-radius: 50px;
+      &:hover {
+        opacity: 0.5;
+      }
     }
   }
