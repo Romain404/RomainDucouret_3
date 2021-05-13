@@ -16,6 +16,7 @@
 }
 .far {
   color: #000;
+  width: 33px;
 }
 .far:hover {
   animation: fill 1s;
@@ -118,6 +119,10 @@ h1 {
   margin-right: 20px;
 }
 
+.entrees {
+  animation: loadingmenus 2000ms;
+}
+
 .conteneur {
   background-color: white;
   margin-bottom: 20px;
@@ -127,7 +132,6 @@ h1 {
   transition-property: transform;
   display: flex;
   flex-direction: row;
-  animation: loadingmenus 2000ms;
 }
 .conteneur .element {
   display: flex;
@@ -178,7 +182,7 @@ h1 {
 
 @keyframes loadingmenus {
   0% {
-    opacity: 0.2;
+    opacity: 0;
   }
   100% {
     opacity: 1;

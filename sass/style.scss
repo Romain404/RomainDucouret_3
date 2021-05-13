@@ -48,6 +48,7 @@
     transform: rotate(0deg) scale(1);
     border-top-color: $primary-color;
     border-color: #f2f2f2;
+    visibility: visible;
   }
 
   50% {
@@ -103,6 +104,7 @@
   .loading {
     top: 40%;
     right: 40%;
+    visibility: hidden;
   }
 }
 
@@ -171,4 +173,7 @@
 
 @media screen and (min-width: 1400px) {
   // Desktop XL
+  .description h3 {
+    width: 95%;
+  }
 }

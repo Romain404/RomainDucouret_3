@@ -104,6 +104,12 @@ h1 {
   margin-right: 20px;
 }
 
+// animation chargement des éléments
+
+.entrees {
+  animation: loadingmenus 2000ms;
+}
+
 .conteneur {
   background-color: white;
   margin-bottom: 20px;
@@ -113,7 +119,6 @@ h1 {
   transition-property: transform;
   display: flex;
   flex-direction: row;
-  animation: loadingmenus 2000ms;
   .element {
     display: flex;
     flex-direction: column;
@@ -169,7 +174,7 @@ h1 {
 
 @keyframes loadingmenus {
   0% {
-    opacity: 0.2;
+    opacity: 0;
   }
 
   100% {
