@@ -21,7 +21,6 @@
 @import "../sass/utils/variables";
 @import "../sass/layout/favorit";
 
-
 header {
   background-color: white;
   width: 100%;
@@ -104,12 +103,6 @@ h1 {
   margin-right: 20px;
 }
 
-// animation chargement des éléments
-
-.entrees {
-  animation: loadingmenus 2000ms;
-}
-
 .conteneur {
   background-color: white;
   margin-bottom: 20px;
@@ -170,11 +163,25 @@ h1 {
   }
 }
 
-// animation de chargement des plats
+// animation de chargement du menu
+
+.entrees {
+  animation: loadingmenus 2000ms;
+}
+.plats {
+  animation: loadingmenus 3500ms;
+}
+.desserts {
+  animation: loadingmenus 4000ms;
+}
 
 @keyframes loadingmenus {
   0% {
     opacity: 0;
+  }
+
+  50% {
+    opacity: 0.3;
   }
 
   100% {

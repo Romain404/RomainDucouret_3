@@ -119,10 +119,6 @@ h1 {
   margin-right: 20px;
 }
 
-.entrees {
-  animation: loadingmenus 2000ms;
-}
-
 .conteneur {
   background-color: white;
   margin-bottom: 20px;
@@ -180,9 +176,24 @@ h1 {
   margin-right: 20px;
 }
 
+.entrees {
+  animation: loadingmenus 2000ms;
+}
+
+.plats {
+  animation: loadingmenus 3500ms;
+}
+
+.desserts {
+  animation: loadingmenus 4000ms;
+}
+
 @keyframes loadingmenus {
   0% {
     opacity: 0;
+  }
+  50% {
+    opacity: 0.3;
   }
   100% {
     opacity: 1;
