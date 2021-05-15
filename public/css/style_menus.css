@@ -93,7 +93,7 @@ h1 {
   font-family: "Roboto-Thin";
   margin-left: 20px;
   border-bottom: 4px solid #99E2D0;
-  width: max-content;
+  width: 50px;
   font-size: 1.2em;
   padding-bottom: 5px;
   text-transform: uppercase;
@@ -137,18 +137,29 @@ h1 {
   transition-property: transform;
   width: 100%;
 }
-.conteneur .element h1 {
+.conteneur .element h3 {
   margin: 0;
   font-family: "Roboto-Bold";
-  font-size: 1.3em;
+  font-size: 1em;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-right: 10px;
 }
 .conteneur .element p {
   margin: 0;
+  margin-right: 10px;
   font-family: "Roboto";
+  font-size: 0.9em;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
-.conteneur .element h3 {
+.conteneur .element h4 {
   margin: 0;
   font-family: "Roboto";
+  margin-right: 10px;
 }
 .conteneur .element .description {
   display: flex;
@@ -174,18 +185,6 @@ h1 {
   color: white;
   margin-left: 20px;
   margin-right: 20px;
-}
-
-.entrees {
-  animation: loadingmenus 2000ms;
-}
-
-.plats {
-  animation: loadingmenus 3500ms;
-}
-
-.desserts {
-  animation: loadingmenus 4000ms;
 }
 
 @keyframes loadingmenus {
@@ -241,7 +240,6 @@ footer {
   background-color: #313131;
   padding: 10px;
   padding-left: 20px;
-  width: 100%;
 }
 footer a {
   font-family: "Roboto";
@@ -256,7 +254,7 @@ footer a i {
 footer a:hover {
   text-decoration: underline;
 }
-footer h1 {
+footer h2 {
   font-family: "Shrikhand";
   color: white;
   font-size: 1.2em;

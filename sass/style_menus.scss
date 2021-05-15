@@ -76,7 +76,7 @@ h1 {
     font-family: "Roboto-Thin";
     margin-left: 20px;
     border-bottom: 4px solid $tertiary-color;
-    width: max-content;
+    width: 50px;
     font-size: 1.2em;
     padding-bottom: 5px;
     text-transform: uppercase;
@@ -119,18 +119,31 @@ h1 {
     border-radius: 20px;
     transition-property: transform;
     width: 100%;
-    h1 {
+    h3 {
       margin: 0;
       font-family: "Roboto-Bold";
-      font-size: 1.3em;
+      font-size: 1em;
+      // points de suspentions
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      margin-right: 10px;
     }
     p {
       margin: 0;
+      margin-right: 10px;
       font-family: "Roboto";
+      font-size: 0.9em;
+      white-space: nowrap;
+      // points de suspentions
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
     }
-    h3 {
+    h4 {
       margin: 0;
       font-family: "Roboto";
+      margin-right: 10px;
     }
 
     .description {
@@ -164,16 +177,6 @@ h1 {
 }
 
 // animation de chargement du menu
-
-.entrees {
-  animation: loadingmenus 2000ms;
-}
-.plats {
-  animation: loadingmenus 3500ms;
-}
-.desserts {
-  animation: loadingmenus 4000ms;
-}
 
 @keyframes loadingmenus {
   0% {
@@ -239,7 +242,6 @@ footer {
   background-color: rgb(49, 49, 49);
   padding: 10px;
   padding-left: 20px;
-  width: 100%;
   a {
     font-family: "Roboto";
     color: white;
@@ -253,7 +255,7 @@ footer {
       text-decoration: underline;
     }
   }
-  h1 {
+  h2 {
     font-family: "Shrikhand";
     color: white;
     font-size: 1.2em;
