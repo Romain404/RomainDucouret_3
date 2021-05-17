@@ -28,21 +28,17 @@
 @import "../sass/layout/footer";
 @import "../sass/layout/favorit";
 @import "../sass/utils/keyframes";
+@import "../sass/utils/mixins";
 
-
-// animation chargement
-
-.loading {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  border: 20px solid transparent;
-  margin: auto;
-  animation: chargement 3000ms;
+.spinner {
+  @include loader;
+  background-color: white;
   position: absolute;
-  top: 40%;
-  right: 25%;
+  z-index: 5;
+  opacity: 0;
 }
+
+
 
 @media screen and (min-width: 768px) {
   // Tablettes
@@ -157,14 +153,11 @@
       font-size: 1.5em;
     }
   }
-  .loading {
-    top: 50%;
-    right: 42%;
-  }
 }
 
 @media screen and (min-width: 1200px) {
   // Desktop
+  
 }
 
 @media screen and (min-width: 1400px) {

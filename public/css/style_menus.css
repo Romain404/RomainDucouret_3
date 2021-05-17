@@ -63,18 +63,33 @@
 }
 @keyframes chargement {
   0% {
-    transform: rotate(0deg) scale(1);
-    border-top-color: #99E2D0;
-    border-color: #f2f2f2;
-    visibility: visible;
-  }
-  50% {
-    transform: rotate(780deg) scale(1.25);
-    border-top-color: #99E2D0;
+    color: #99E2D0;
+    opacity: 1;
   }
   100% {
-    border-top: 20px transparent;
-    border: 20px transparent;
+    transform: rotate(720deg);
+  }
+}
+@keyframes loaderbg {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes scroll {
+  0% {
+    overflow-y: hidden;
+  }
+  90% {
+    overflow-y: hidden;
+  }
+  100% {
+    overflow-y: auto;
   }
 }
 header {

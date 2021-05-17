@@ -19,6 +19,8 @@ body {
   padding: 0;
   width: 100%;
   height: 100%;
+  animation: scroll 2s;
+  overflow-x: hidden;
 }
 
 h2 {
@@ -329,30 +331,54 @@ footer h2 {
 }
 @keyframes chargement {
   0% {
-    transform: rotate(0deg) scale(1);
-    border-top-color: #99E2D0;
-    border-color: #f2f2f2;
-    visibility: visible;
-  }
-  50% {
-    transform: rotate(780deg) scale(1.25);
-    border-top-color: #99E2D0;
+    color: #99E2D0;
+    opacity: 1;
   }
   100% {
-    border-top: 20px transparent;
-    border: 20px transparent;
+    transform: rotate(720deg);
   }
 }
-.loading {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  border: 20px solid transparent;
-  margin: auto;
-  animation: chargement 3000ms;
+@keyframes loaderbg {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes scroll {
+  0% {
+    overflow-y: hidden;
+  }
+  90% {
+    overflow-y: hidden;
+  }
+  100% {
+    overflow-y: auto;
+  }
+}
+.spinner {
+  color: #99E2D0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  animation: loaderbg 2s;
+  display: flex;
+  justify-content: center;
+  background-color: white;
   position: absolute;
+  z-index: 5;
+  opacity: 0;
+}
+.spinner i.fas.fa-sync.fa-10x {
   top: 40%;
-  right: 25%;
+  position: absolute;
+  animation: chargement 2s ease-in-out;
+  opacity: 0;
+  color: #99E2D0;
 }
 
 @media screen and (min-width: 768px) {
@@ -458,11 +484,6 @@ footer h2 {
   }
   .description p {
     font-size: 1.5em;
-  }
-
-  .loading {
-    top: 50%;
-    right: 42%;
   }
 }
 @media screen and (min-width: 1400px) {

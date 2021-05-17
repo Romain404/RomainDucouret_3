@@ -45,3 +45,20 @@
    transform: translateX(-50px)
   }
 }
+
+@mixin loader {
+  color: $tertiary-color;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  animation: loaderbg 2s;
+  display: flex;
+  justify-content: center;
+  i.fas.fa-sync.fa-10x{
+    top: 40%;
+    position: absolute;
+    animation: chargement 2s ease-in-out;
+    opacity: 0;
+    color: $tertiary-color;
+  }
+}
