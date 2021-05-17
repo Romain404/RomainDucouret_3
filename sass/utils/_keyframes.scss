@@ -1,15 +1,11 @@
 // animation de chargement du menu
 
-@keyframes loadingmenus {
-  0% {
+@keyframes fadein {
+  from {
     opacity: 0;
   }
 
-  50% {
-    opacity: 0.3;
-  }
-
-  100% {
+  to {
     opacity: 1;
   }
 }

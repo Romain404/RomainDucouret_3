@@ -71,6 +71,10 @@
     margin-right: auto;
   }
 
+  h2 {
+    align-self: center;
+  }
+
   .card {
     width: 49%;
     margin: 0;
@@ -93,6 +97,10 @@
     top: 40%;
     right: 40%;
     visibility: hidden;
+  }
+
+  .new {
+    width: 47.7%;
   }
 }
 

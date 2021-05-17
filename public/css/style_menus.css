@@ -37,14 +37,11 @@
     opacity: 1;
   }
 }
-@keyframes loadingmenus {
-  0% {
+@keyframes fadein {
+  from {
     opacity: 0;
   }
-  50% {
-    opacity: 0.3;
-  }
-  100% {
+  to {
     opacity: 1;
   }
 }
@@ -202,6 +199,18 @@ h1 {
   transform: translateX(-50px);
 }
 
+.entrees {
+  animation: fadein 1000ms ease-in-out;
+}
+
+.plats {
+  animation: fadein 2000ms ease-in-out;
+}
+
+.desserts {
+  animation: fadein 3000ms ease-in-out;
+}
+
 .entrees,
 .plats,
 .desserts {
@@ -264,7 +273,7 @@ h1 {
   width: 100%;
   justify-content: center;
   display: flex;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 .order_button .order {
   width: max-content;
@@ -312,6 +321,28 @@ footer h2 {
   color: white;
   font-size: 1.2em;
   font-weight: lighter;
+}
+
+@media screen and (min-width: 768px) {
+  .menu h2 {
+    align-self: center;
+    align-content: center;
+    width: max-content;
+  }
+
+  .entrees, .plats, .desserts {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .menu .titre {
+    justify-content: space-around;
+  }
+
+  footer {
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=style_menus.css.map */
