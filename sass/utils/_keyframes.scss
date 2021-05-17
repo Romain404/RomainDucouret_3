@@ -1,0 +1,56 @@
+// animation de chargement du menu
+
+@keyframes loadingmenus {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.3;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+// animation d'ajout d'un plat a la commande
+
+@keyframes addtocard {
+  0% {
+    width: 0px;
+  }
+
+  100% {
+    width: 70px;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes chargement {
+  0% {
+    transform: rotate(0deg) scale(1);
+    border-top-color: $tertiary-color;
+    border-color: #f2f2f2;
+    visibility: visible;
+  }
+
+  50% {
+    transform: rotate(780deg) scale(1.25);
+    border-top-color: $tertiary-color;
+  }
+
+  100% {
+    border-top: 20px transparent;
+    border: 20px transparent;
+  }
+}

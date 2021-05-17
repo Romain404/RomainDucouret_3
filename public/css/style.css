@@ -294,6 +294,49 @@ footer h2 {
     opacity: 1;
   }
 }
+@keyframes loadingmenus {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes addtocard {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 70px;
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes chargement {
+  0% {
+    transform: rotate(0deg) scale(1);
+    border-top-color: #99E2D0;
+    border-color: #f2f2f2;
+    visibility: visible;
+  }
+  50% {
+    transform: rotate(780deg) scale(1.25);
+    border-top-color: #99E2D0;
+  }
+  100% {
+    border-top: 20px transparent;
+    border: 20px transparent;
+  }
+}
 .loading {
   width: 120px;
   height: 120px;
@@ -306,22 +349,6 @@ footer h2 {
   right: 25%;
 }
 
-@keyframes chargement {
-  0% {
-    transform: rotate(0deg) scale(1);
-    border-top-color: #9356dc;
-    border-color: #f2f2f2;
-    visibility: visible;
-  }
-  50% {
-    transform: rotate(780deg) scale(1.25);
-    border-top-color: blue;
-  }
-  100% {
-    border-top: 20px transparent;
-    border: 20px transparent;
-  }
-}
 @media screen and (min-width: 768px) {
   .fonctionnement .steps-list {
     flex-direction: row;

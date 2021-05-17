@@ -20,6 +20,8 @@
 
 @import "../sass/utils/variables";
 @import "../sass/layout/favorit";
+@import "../sass/utils/keyframes";
+@import "../sass/utils/mixins";
 
 header {
   background-color: white;
@@ -94,6 +96,14 @@ h1 {
   }
 }
 
+.conteneur {
+  @include conteneur;
+}
+
+.checked {
+  @include checked;
+}
+
 .entrees,
 .plats,
 .desserts {
@@ -105,20 +115,23 @@ h1 {
 
 .conteneur {
   background-color: white;
-  margin-bottom: 20px;
   box-shadow: -1px 2px 27px 0px rgba(189, 189, 189, 0.65);
   border-radius: 20px;
   position: relative;
   transition-property: transform;
   display: flex;
   flex-direction: row;
+  // Text-overflow
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
   .element {
     display: flex;
     flex-direction: column;
-    padding: 10px;
     border-radius: 20px;
     transition-property: transform;
     width: 100%;
+    cursor: pointer;
     h3 {
       margin: 0;
       font-family: "Roboto-Bold";
@@ -150,67 +163,6 @@ h1 {
       display: flex;
       justify-content: space-between;
     }
-  }
-  &:hover {
-    .checked {
-      background-color: $tertiary-color;
-      animation: addtocard 1000ms;
-      display: flex;
-      i {
-        animation: rotate 1000ms;
-      }
-    }
-  }
-}
-
-.checked {
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-  display: none;
-  justify-content: center;
-  i {
-    margin: auto;
-    color: white;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-}
-
-// animation de chargement du menu
-
-@keyframes loadingmenus {
-  0% {
-    opacity: 0;
-  }
-
-  50% {
-    opacity: 0.3;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-// animation d'ajout d'un plat a la commande
-
-@keyframes addtocard {
-  0% {
-    width: 0px;
-  }
-
-  100% {
-    width: 70px;
-  }
-}
-
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
   }
 }
 

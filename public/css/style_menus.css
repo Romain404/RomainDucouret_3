@@ -37,6 +37,49 @@
     opacity: 1;
   }
 }
+@keyframes loadingmenus {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes addtocard {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 70px;
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes chargement {
+  0% {
+    transform: rotate(0deg) scale(1);
+    border-top-color: #99E2D0;
+    border-color: #f2f2f2;
+    visibility: visible;
+  }
+  50% {
+    transform: rotate(780deg) scale(1.25);
+    border-top-color: #99E2D0;
+  }
+  100% {
+    border-top: 20px transparent;
+    border: 20px transparent;
+  }
+}
 header {
   background-color: white;
   width: 100%;
@@ -110,6 +153,55 @@ h1 {
   background-color: rgba(255, 255, 255, 0);
 }
 
+.conteneur {
+  background-color: #fff;
+  border-radius: 15px;
+  margin: 7px;
+  padding: 10px;
+  box-shadow: 4px 4px 6px #aaa;
+  position: relative;
+  cursor: pointer;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  transition: padding-right 450ms;
+}
+.conteneur:hover {
+  padding-right: 75px;
+}
+.conteneur:hover .checked {
+  opacity: 1;
+  transform: translate(-50px);
+}
+.conteneur:hover .fa-check-circle {
+  transform: rotate(360deg);
+}
+
+.checked {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+  width: 50px;
+  height: 58px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  position: absolute;
+  right: -50px;
+  top: 0;
+  opacity: 0;
+  transition: transform 500ms ease-in-out;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.checked .fa-check-circle {
+  color: #fff;
+  transition: transform 700ms ease-in-out;
+}
+.checked:hover {
+  transform: translateX(-50px);
+}
+
 .entrees,
 .plats,
 .desserts {
@@ -121,21 +213,23 @@ h1 {
 
 .conteneur {
   background-color: white;
-  margin-bottom: 20px;
   box-shadow: -1px 2px 27px 0px rgba(189, 189, 189, 0.65);
   border-radius: 20px;
   position: relative;
   transition-property: transform;
   display: flex;
   flex-direction: row;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .conteneur .element {
   display: flex;
   flex-direction: column;
-  padding: 10px;
   border-radius: 20px;
   transition-property: transform;
   width: 100%;
+  cursor: pointer;
 }
 .conteneur .element h3 {
   margin: 0;
@@ -165,55 +259,7 @@ h1 {
   display: flex;
   justify-content: space-between;
 }
-.conteneur:hover .checked {
-  background-color: #99E2D0;
-  animation: addtocard 1000ms;
-  display: flex;
-}
-.conteneur:hover .checked i {
-  animation: rotate 1000ms;
-}
 
-.checked {
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-  display: none;
-  justify-content: center;
-}
-.checked i {
-  margin: auto;
-  color: white;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-@keyframes loadingmenus {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.3;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes addtocard {
-  0% {
-    width: 0px;
-  }
-  100% {
-    width: 70px;
-  }
-}
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 .order_button {
   width: 100%;
   justify-content: center;

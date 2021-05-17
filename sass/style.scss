@@ -27,6 +27,7 @@
 @import "../sass/layout/restaurants";
 @import "../sass/layout/footer";
 @import "../sass/layout/favorit";
+@import "../sass/utils/keyframes";
 
 
 // animation chargement
@@ -41,25 +42,6 @@
   position: absolute;
   top: 40%;
   right: 25%;
-}
-
-@keyframes chargement {
-  0% {
-    transform: rotate(0deg) scale(1);
-    border-top-color: $primary-color;
-    border-color: #f2f2f2;
-    visibility: visible;
-  }
-
-  50% {
-    transform: rotate(780deg) scale(1.25);
-    border-top-color: blue;
-  }
-
-  100% {
-    border-top: 20px transparent;
-    border: 20px transparent;
-  }
 }
 
 @media screen and (min-width: 768px) {
