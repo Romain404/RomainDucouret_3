@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Roboto";
   src: url("/sass/base/Roboto-Regular.ttf");
@@ -217,7 +218,6 @@ h1 {
   z-index: 2;
   display: flex;
   justify-content: flex-end;
-  padding-right: 20px;
 }
 
 .restaurant-img {
@@ -236,7 +236,7 @@ h1 {
   padding: 10px;
   padding-left: 20px;
 }
-.description h3 {
+.description ù h3 {
   font-size: 1.5em;
   margin-bottom: 0;
   margin-top: 5px;
