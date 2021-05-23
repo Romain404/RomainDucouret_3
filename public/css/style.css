@@ -1,19 +1,18 @@
-@charset "UTF-8";
 @font-face {
   font-family: "Roboto";
-  src: url("/sass/base/Roboto-Regular.ttf");
+  src: url("/sass/base/police/Roboto/Roboto-Regular.ttf");
 }
 @font-face {
   font-family: "Roboto-Bold";
-  src: url("/sass/base/Roboto-Bold.ttf");
+  src: url("/sass/base/police/Roboto/Roboto-Bold.ttf");
 }
 @font-face {
   font-family: "Roboto-Thin";
-  src: url("/sass/base/Roboto-Thin.ttf");
+  src: url("/sass/base/police/Roboto/Roboto-Thin.ttf");
 }
 @font-face {
   font-family: "Shrikhand";
-  src: url("/sass/base/Shrikhand-Regular.ttf");
+  src: url("/sass/base/police/Shrikhand/Shrikhand-Regular.ttf");
 }
 body {
   margin: 0;
@@ -60,6 +59,12 @@ h1 {
 
 .menu h1 {
   font-size: 1.6em;
+}
+
+.description h3 {
+  font-family: "Roboto-Bold";
+  font-size: 1.5em;
+  margin: 0;
 }
 
 .logo-omf {
@@ -235,8 +240,9 @@ h1 {
   flex-wrap: wrap;
   padding: 10px;
   padding-left: 20px;
+  justify-content: space-between;
 }
-.description ù h3 {
+.description h3 {
   font-size: 1.5em;
   margin-bottom: 0;
   margin-top: 5px;

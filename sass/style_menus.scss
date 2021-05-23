@@ -1,21 +1,21 @@
 @font-face {
-  font-family: "Roboto";
-  src: url("/sass/base/Roboto-Regular.ttf");
+  font-family: 'Roboto';
+  src: url('/sass/base/police/Roboto/Roboto-Regular.ttf');
 }
 
 @font-face {
-  font-family: "Roboto-Bold";
-  src: url("/sass/base/Roboto-Bold.ttf");
+  font-family: 'Roboto-Bold';
+  src: url('/sass/base/police/Roboto/Roboto-Bold.ttf');
 }
 
 @font-face {
-  font-family: "Roboto-Thin";
-  src: url("/sass/base/Roboto-Thin.ttf");
+  font-family: 'Roboto-Thin';
+  src: url('/sass/base/police/Roboto/Roboto-Thin.ttf');
 }
 
 @font-face {
-  font-family: "Shrikhand";
-  src: url("/sass/base/Shrikhand-Regular.ttf");
+  font-family: 'Shrikhand';
+  src: url('/sass/base/police/Shrikhand/Shrikhand-Regular.ttf');
 }
 
 @import "../sass/utils/variables";
