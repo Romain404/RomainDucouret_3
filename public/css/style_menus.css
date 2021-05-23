@@ -1,18 +1,18 @@
 @font-face {
   font-family: "Roboto";
-  src: url("/sass/base/police/Roboto/Roboto-Regular.ttf");
+  src: url("/sass/base/police/Roboto/roboto.ttf");
 }
 @font-face {
   font-family: "Roboto-Bold";
-  src: url("/sass/base/police/Roboto/Roboto-Bold.ttf");
+  src: url("/sass/base/police/Roboto/robotobold.ttf");
 }
 @font-face {
   font-family: "Roboto-Thin";
-  src: url("/sass/base/police/Roboto/Roboto-Thin.ttf");
+  src: url("/sass/base/police/Roboto/robotothin.ttf");
 }
 @font-face {
   font-family: "Shrikhand";
-  src: url("/sass/base/police/Shrikhand/Shrikhand-Regular.ttf");
+  src: url("/sass/base/police/Shrikhand/shrikhand.ttf");
 }
 .far {
   color: #000;
