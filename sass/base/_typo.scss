@@ -1,4 +1,4 @@
-h2 {
+.explore h2 {
   font-family: "Roboto-Thin";
   font-size: 1.3em;
   margin-top: 0;
@@ -34,11 +34,28 @@ h1 {
 }
 
 .menu h1 {
-    font-size: 1.6em;
+  font-size: 1.6em;
 }
 
 .description h3 {
-  font-family: 'Roboto-Bold';
   font-size: 1.5em;
+  margin-bottom: 0;
+  margin-top: 5px;
+  font-family: "Roboto-Bold";
+  width: 85%;
   margin: 0;
+}
+
+.card h4 {
+  font-size: 1em;
+  font-family: "Roboto";
+  background-color: $tertiary-color;
+  width: max-content;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  color: #22b900;
+  margin-right: 10px;
 }
