@@ -145,7 +145,8 @@ h1 {
   border-top-right-radius: 20px;
 }
 .menu h2 {
-  font-family: "Roboto-Thin";
+  font-family: "Roboto";
+  font-weight: 350;
   margin-left: 20px;
   border-bottom: 4px solid #99E2D0;
   width: 50px;
@@ -257,7 +258,8 @@ h1 {
 }
 .conteneur .element h3 {
   margin: 0;
-  font-family: "Roboto-Bold";
+  font-family: "Roboto";
+  font-weight: bold;
   font-size: 1em;
   text-overflow: ellipsis;
   overflow: hidden;

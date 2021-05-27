@@ -23,9 +23,10 @@ body {
 }
 
 h2 {
-  font-family: "Roboto-Thin";
+  font-family: "Roboto";
   font-size: 1.3em;
   margin-top: 0;
+  font-weight: 350;
 }
 
 h1 {
@@ -40,8 +41,9 @@ h1 {
 
 .fonctionnement h2,
 .restaurants h2 {
-  font-family: "Roboto-Bold";
+  font-family: "Roboto";
   font-size: 1.6em;
+  font-weight: bold;
   margin: 5px;
   margin-bottom: 15px;
   margin-top: 40px;
@@ -62,9 +64,17 @@ h1 {
 }
 
 .description h3 {
-  font-family: "Roboto-Bold";
+  font-family: "Roboto";
+  font-weight: bold;
   font-size: 1.5em;
   margin: 0;
+}
+
+footer h2 {
+  font-family: "Shrikhand";
+  color: white;
+  font-size: 1.2em;
+  font-weight: lighter;
 }
 
 .logo-omf {
@@ -85,10 +95,6 @@ h1 {
   align-self: center;
   margin-right: 10px;
   color: #6d6d6d;
-}
-.location p {
-  font-size: 1.2em;
-  font-family: "Roboto-Bold";
 }
 
 .explore {
@@ -124,6 +130,7 @@ h1 {
 }
 .location p {
   color: #5a5a5a;
+  font-family: "roboto";
 }
 
 .fonctionnement {
@@ -284,12 +291,6 @@ footer a i {
 }
 footer a:hover {
   text-decoration: underline;
-}
-footer h2 {
-  font-family: "Shrikhand";
-  color: white;
-  font-size: 1.2em;
-  font-weight: lighter;
 }
 
 .far {
