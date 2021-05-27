@@ -1,9 +1,9 @@
 /* Error: expected "{".
  *   ,
- * 8 |   font-size: 1.3em;
+ * 9 |   font-size: 1.3em;
  *   |                   ^
  *   '
- *   sass\base\_typo.scss 8:19  @import
+ *   sass\base\_typo.scss 9:19  @import
  *   sass\style.scss 23:9       root stylesheet */
 
 body::before {
@@ -14,5 +14,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: 'Error: expected "{".\a   \2577 \a 8 \2502    font-size: 1.3em;\d\a   \2502                    ^\a   \2575 \a   sass\\base\\_typo.scss 8:19  @import\a   sass\\style.scss 23:9       root stylesheet';
+  content: 'Error: expected "{".\a   \2577 \a 9 \2502    font-size: 1.3em;\d\a   \2502                    ^\a   \2575 \a   sass\\base\\_typo.scss 9:19  @import\a   sass\\style.scss 23:9       root stylesheet';
 }
