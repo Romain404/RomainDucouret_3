@@ -23,19 +23,6 @@
     text-decoration: none;
     color: #000;
     border-radius: 20px;
-    h4 {
-      font-size: 1em;
-      font-family: "Roboto";
-      background-color: $tertiary-color;
-      width: max-content;
-      padding-right: 10px;
-      padding-left: 10px;
-      padding-top: 5px;
-      padding-bottom: 5px;
-      border-radius: 5px;
-      color: #22b900;
-      margin-right: 10px;
-    }
   }
   &:hover {
     box-shadow: -1px 2px 10px 0px rgb(92 92 92 / 15%);
@@ -66,13 +53,6 @@
   padding: 10px;
   padding-left: 20px;
   justify-content: space-between;
-  h3 {
-    font-size: 1.5em;
-    margin-bottom: 0;
-    margin-top: 5px;
-    font-family: "Roboto-Bold";
-    width: 85%;
-  }
   p {
     font-size: 1.2em;
     font-family: "Roboto";
