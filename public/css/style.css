@@ -23,9 +23,10 @@ body {
 }
 
 h2 {
-  font-family: "Roboto-Thin";
+  font-family: "Roboto";
   font-size: 1.3em;
   margin-top: 0;
+  font-weight: 350;
 }
 
 h1 {
@@ -38,33 +39,8 @@ h1 {
   width: 100%;
 }
 
-.fonctionnement h2,
-.restaurants h2 {
-  font-family: "Roboto-Bold";
-  font-size: 1.6em;
-  margin: 5px;
-  margin-bottom: 15px;
-  margin-top: 40px;
-}
-
-.step h3 {
-  font-family: "Roboto";
-  font-size: 1.2em;
-  align-self: center;
-  text-align: start;
-  width: 70%;
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
 .menu h1 {
   font-size: 1.6em;
-}
-
-.description h3 {
-  font-family: "Roboto-Bold";
-  font-size: 1.5em;
-  margin: 0;
 }
 
 .logo-omf {
@@ -124,12 +100,21 @@ h1 {
 }
 .location p {
   color: #5a5a5a;
+  font-family: "roboto";
 }
 
 .fonctionnement {
   padding: 10px;
   display: flex;
   flex-direction: column;
+}
+.fonctionnement h2 {
+  font-family: "Roboto";
+  font-size: 1.6em;
+  font-weight: bold;
+  margin: 5px;
+  margin-bottom: 15px;
+  margin-top: 40px;
 }
 .fonctionnement .steps-list {
   display: flex;
@@ -165,6 +150,15 @@ h1 {
   font-family: "Roboto";
   right: 15px;
 }
+.fonctionnement .step h3 {
+  font-family: "Roboto";
+  font-size: 1.2em;
+  align-self: center;
+  text-align: start;
+  width: 70%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
 .fonctionnement div:nth-child(3) {
   background-color: #9256dc25;
 }
@@ -182,6 +176,14 @@ h1 {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
+}
+.restaurants h2 {
+  font-family: "Roboto";
+  font-size: 1.6em;
+  font-weight: bold;
+  margin: 5px;
+  margin-bottom: 15px;
+  margin-top: 40px;
 }
 
 .card {
@@ -243,10 +245,10 @@ h1 {
   justify-content: space-between;
 }
 .description h3 {
+  font-family: "Roboto";
+  font-weight: bold;
   font-size: 1.5em;
-  margin-bottom: 0;
-  margin-top: 5px;
-  font-family: "Roboto-Bold";
+  margin: 0;
   width: 85%;
 }
 .description p {

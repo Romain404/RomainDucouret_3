@@ -1,20 +1,26 @@
 footer {
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(49, 49, 49);
-    padding: 10px;
-    padding-left: 20px;
-    a {
-      font-family: "Roboto";
-      color: white;
-      text-decoration: none;
-      margin-bottom: 10px;
-      i {
-        margin-right: 10px;
-        width: 20px;
-      }
-      &:hover {
-        text-decoration: underline;
-      }
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(49, 49, 49);
+  padding: 10px;
+  padding-left: 20px;
+  a {
+    font-family: "Roboto";
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+    i {
+      margin-right: 10px;
+      width: 20px;
+    }
+    &:hover {
+      text-decoration: underline;
     }
   }
+  h2 {
+    font-family: "Shrikhand";
+    color: white;
+    font-size: 1.2em;
+    font-weight: lighter;
+  }
+}
