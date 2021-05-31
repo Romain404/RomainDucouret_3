@@ -83,7 +83,6 @@ header {
   flex-direction: row-reverse;
   justify-content: flex-end;
   height: 70px;
-  background: center no-repeat url("/public/img/ohmyfood@2x.svg");
 }
 
 .return_button {
